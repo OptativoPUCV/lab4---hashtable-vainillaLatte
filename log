@@ -43,3 +43,13 @@ Wed 19 Apr 2023 01:58:47 AM UTC:
  tests:  1|5
 total_score: 10/70
 5fea3ea
+Wed 19 Apr 2023 02:48:10 AM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:25: error: invalid operands to binary + (have ‘Pair *’ and ‘char *’)
+   49 |     map->buckets[codigo]+=key;
+      |                         ^~
+Compilation failed
+9e5b474

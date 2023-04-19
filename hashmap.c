@@ -45,7 +45,8 @@ long codigo = hash(key, map->capacity);
 while(1)
   {
     if(is_equal(map->buckets[codigo],key)==0)
-      break;
+        break;
+    map->buckets[codigo]+=key;
   }
 }
 
