@@ -173,3 +173,9 @@ hashmap.c:50:17: error: request for member ‘key’ in something not a structur
       |                 ^
 Compilation failed
 712be55
+Wed 19 Apr 2023 02:55:58 AM UTC: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+c601f23

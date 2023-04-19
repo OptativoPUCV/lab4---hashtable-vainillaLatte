@@ -46,8 +46,7 @@ while(1)
   {
     if(is_equal(map->buckets[codigo],key)==0)
         break;
-    map->buckets[codigo]->key = key;
-    map->buckets.key->value=value;
+    map->buckets[codigo]= createPair(key,value);
   }
 }
 
