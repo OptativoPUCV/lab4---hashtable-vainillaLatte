@@ -53,3 +53,14 @@ hashmap.c:49:25: error: invalid operands to binary + (have ‘Pair *’ and ‘c
       |                         ^~
 Compilation failed
 9e5b474
+Wed 19 Apr 2023 02:48:21 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:25: error: assignment to ‘Pair *’ from incompatible pointer type ‘char *’ [-Werror=incompatible-pointer-types]
+   49 |     map->buckets[codigo]=key;
+      |                         ^
+cc1: all warnings being treated as errors
+Compilation failed
+88c8383
