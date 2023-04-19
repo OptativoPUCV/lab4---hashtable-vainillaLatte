@@ -89,3 +89,13 @@ hashmap.c:49:9: error: assignment to ‘char *’ from incompatible pointer type
 cc1: all warnings being treated as errors
 Compilation failed
 ba028d6
+Wed 19 Apr 2023 02:50:20 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:29: error: expected expression before ‘long’
+   49 |     map->buckets[codigo] += long(key);
+      |                             ^~~~
+Compilation failed
+f8e1baa
