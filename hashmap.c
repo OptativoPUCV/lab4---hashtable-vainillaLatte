@@ -53,7 +53,7 @@ while(1)
         
       }
       break;
-    }
+    
       else
       {
          map->current++;
@@ -64,6 +64,7 @@ while(1)
             }
         break;
       }
+    }
             
     }
         
