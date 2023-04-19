@@ -120,3 +120,13 @@ hashmap.c:49:26: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 73400f4
+Wed 19 Apr 2023 02:52:38 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:26: error: invalid operands to binary + (have ‘Pair *’ and ‘void *’)
+   49 |     map->buckets[codigo] += value;
+      |                          ^~
+Compilation failed
+46c943a
