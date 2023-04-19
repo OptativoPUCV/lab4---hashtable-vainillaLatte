@@ -47,7 +47,7 @@ while(1)
     if(is_equal(map->buckets[codigo],key)==0)
         break;
     map->buckets[codigo]->key = key;
-    map->buckets[codigo]->value=value;
+    map->buckets[key]->value=value;
   }
 }
 
