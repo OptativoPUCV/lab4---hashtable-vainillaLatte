@@ -41,7 +41,7 @@ int is_equal(void* key1, void* key2){
 
 void insertMap(HashMap * map, char * key, void * value) {
 
-long codigo = hash(key, map->capacity)
+long codigo = hash(key, map->capacity);
 while(1)
   {
     if(is_equal(map->buckets[codigo],key)==0)
