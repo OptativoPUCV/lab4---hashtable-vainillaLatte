@@ -50,9 +50,7 @@ while(1)
       {
         map->buckets[codigo]= createPair(key,value);
         map->size++;
-      }
-    }
-      else
+      }  else
       {
         while(1)
           {
@@ -60,16 +58,16 @@ while(1)
             if(!map->current)
             {
               map->buckets[codigo]= createPair(key,value);
-               map->size++;
+              map->size++;
+              break;
+            }
             
-            break;
           }
         }
       break;
-     
-      }
-    
+    }  
   }
+}  
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
