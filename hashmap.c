@@ -54,7 +54,7 @@ while(1)
       }
       break;
     }
-    else
+    /*else
       {
         while(1)
           {
@@ -67,7 +67,7 @@ while(1)
             break;
           }
         }
-    }  
+    }*/  
 }  
 
 void enlarge(HashMap * map) {
