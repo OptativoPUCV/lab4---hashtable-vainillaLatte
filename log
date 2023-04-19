@@ -78,3 +78,14 @@ hashmap.c:49:25: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 df19c02
+Wed 19 Apr 2023 02:49:17 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:9: error: assignment to ‘char *’ from incompatible pointer type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   49 |     key = map->buckets[codigo];
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+ba028d6
