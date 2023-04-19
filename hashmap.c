@@ -50,8 +50,10 @@ while(1)
       map->size++;
       break;
     }
-    
-    
+    else
+    {
+      map->current++;
+    }
   }
 }
 
