@@ -250,3 +250,18 @@ hashmap.c:49:23: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 d7b749f
+Wed 19 Apr 2023 03:07:00 AM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:13: error: ‘map’ is a pointer; did you mean to use ‘->’?
+   49 |       if(map.current == NULL)
+      |             ^
+      |             ->
+hashmap.c:56:12: error: ‘map’ is a pointer; did you mean to use ‘->’?
+   56 |         map.current++;
+      |            ^
+      |            ->
+Compilation failed
+efaceb8
