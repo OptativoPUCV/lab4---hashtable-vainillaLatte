@@ -338,3 +338,14 @@ Wed 19 Apr 2023 03:26:38 AM UTC:
  tests:  2|5
 total_score: 20/70
 4a9dd2a
+Wed 19 Apr 2023 03:31:18 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘is_equal’:
+hashmap.c:39:1: error: control reaches end of non-void function [-Werror=return-type]
+   39 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+4efceb8
