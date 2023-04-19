@@ -109,3 +109,14 @@ hashmap.c:49:26: error: invalid operands to binary + (have ‘Pair *’ and ‘v
       |                          ^~
 Compilation failed
 a6558a6
+Wed 19 Apr 2023 02:52:11 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:26: error: statement with no effect [-Werror=unused-value]
+   49 |     map->buckets[codigo] == value;
+      |     ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+73400f4
