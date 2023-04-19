@@ -65,9 +65,9 @@ while(1)
               map->size++;
             }
             break;
-          }
+          }*/
         }
-    }*/  
+    } 
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
