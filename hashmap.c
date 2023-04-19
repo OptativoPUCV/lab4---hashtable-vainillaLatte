@@ -46,7 +46,7 @@ while(1)
   {
     if(is_equal(map->buckets[codigo],key)==0)
     {
-      if(map->current == NULL)
+      if(map->current)
       {
         map->buckets[codigo]= createPair(key,value);
         map->size++;
