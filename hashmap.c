@@ -46,7 +46,7 @@ while(1)
   {
     if(is_equal(map->buckets[codigo],key)==0)
         break;
-    map->buckets[codigo] += long(key);
+    map->buckets[codigo] += value;
   }
 }
 
