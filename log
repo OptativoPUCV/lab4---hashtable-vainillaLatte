@@ -152,3 +152,14 @@ hashmap.c:50:17: error: array subscript is not an integer
       |                 ^
 Compilation failed
 824856b
+Wed 19 Apr 2023 02:54:37 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:50:17: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+   50 |     map->buckets->key->value=value;
+      |                 ^~
+      |                 ->
+Compilation failed
+7a8ea43
