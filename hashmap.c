@@ -49,6 +49,7 @@ while(1)
       map->buckets[codigo]= createPair(key,value);
       break;
     }
+    map->size++;
     
   }
 }
