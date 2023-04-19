@@ -265,3 +265,14 @@ hashmap.c:56:12: error: ‘map’ is a pointer; did you mean to use ‘->’?
       |            ->
 Compilation failed
 efaceb8
+Wed 19 Apr 2023 03:07:12 AM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:23: error: comparison between pointer and integer [-Werror]
+   49 |       if(map->current == NULL)
+      |                       ^~
+cc1: all warnings being treated as errors
+Compilation failed
+7e9542f
