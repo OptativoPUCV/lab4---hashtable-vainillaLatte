@@ -23,3 +23,17 @@ hashmap.c:63:17: error: expected ‘;’ before ‘mapa’
 cc1: all warnings being treated as errors
 Compilation failed
 ee21b58
+Wed 19 Apr 2023 01:58:37 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:1: error: expected ‘,’ or ‘;’ before ‘while’
+   45 | while(1)
+      | ^~~~~
+hashmap.c:44:6: error: unused variable ‘codigo’ [-Werror=unused-variable]
+   44 | long codigo = hash(key, map->capacity)
+      |      ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+450c12e
