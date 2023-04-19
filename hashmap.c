@@ -48,7 +48,8 @@ while(1)
     {
       if(!map->current)
       {
-        break;
+        map->buckets[codigo]= createPair(key,value);
+        map->size++;
       }  else
       {
         while(1)
@@ -58,12 +59,10 @@ while(1)
             {
               map->buckets[codigo]= createPair(key,value);
               map->size++;
-              break;
             }
+            break;
           }
         }
-      map->buckets[codigo]= createPair(key,value);
-      map->size++;
       break;
     }  
   }
