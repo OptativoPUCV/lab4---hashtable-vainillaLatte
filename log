@@ -312,3 +312,13 @@ Wed 19 Apr 2023 03:24:28 AM UTC:
  tests:  2|5
 total_score: 20/70
 11003f9
+Wed 19 Apr 2023 03:25:50 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:59:46: error: invalid type argument of ‘->’ (have ‘long int’)
+   59 |             if(!map->current && !map->current->key)
+      |                                              ^~
+Compilation failed
+0daa4f8
