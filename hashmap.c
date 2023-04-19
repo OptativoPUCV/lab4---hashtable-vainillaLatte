@@ -50,9 +50,9 @@ while(1)
       {
         map->buckets[codigo]= createPair(key,value);
         map->size++;
-        
+        break;
       }
-      break;
+      
     
       else
       {
