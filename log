@@ -130,3 +130,9 @@ hashmap.c:49:26: error: invalid operands to binary + (have ‘Pair *’ and ‘v
       |                          ^~
 Compilation failed
 46c943a
+Wed 19 Apr 2023 02:53:35 AM UTC: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+2262223
