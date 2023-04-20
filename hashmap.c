@@ -81,8 +81,8 @@ void eraseMap(HashMap * map,  char * key) {
     Pair *dato=searchMap(map,key);
   if(dato!=NULL)
   {
-    long codigo = hash(key, map->capacity);
-    map->buckets[codigo]=NULL;
+    dato->key=NULL;
+    map->size--;
   }
 
 }
