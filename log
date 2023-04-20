@@ -686,3 +686,14 @@ Thu 20 Apr 2023 01:26:07 AM UTC:
  tests:  8|3
 total_score: 40/70
 72b0802
+Thu 20 Apr 2023 01:28:30 AM UTC: 
+ hashmap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:81:5: error: ‘dato’ undeclared (first use in this function)
+   81 |     dato=searchMap(map,key);
+      |     ^~~~
+hashmap.c:81:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+6874c88
