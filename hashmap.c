@@ -41,27 +41,23 @@ int is_equal(void* key1, void* key2){
 
 void insertMap(HashMap *map, char *key, void *value) {
     long codigo = hash(key, map->capacity);
-    int count = 0; // Variable para rastrear cuántas casillas se han verificado
+    int count = 0;
 
-    // Bucle para buscar una casilla vacía
     while (map->buckets[codigo] != NULL && count < map->capacity) {
-        // Si la clave ya existe, no insertar y salir de la función
+      
         if (is_equal(map->buckets[codigo]->key, key)) {
             return;
         }
-        codigo = (codigo + 1) % map->capacity; // Método de resolución de colisiones: lineal probing
+        codigo = (codigo + 1) % map->capacity; 
         count++;
     }
-
-    // Si se verificó todo el arreglo y no se encontró una casilla vacía, no insertar y salir de la función
     if (count == map->capacity) {
         return;
     }
 
-    // Insertar el nuevo par clave-valor en la casilla vacía
     map->buckets[codigo] = createPair(key, value);
-    map->current = codigo; // Actualizar el índice current
-    map->size++; // Incrementar el tamaño del mapa
+    map->current = codigo; 
+    map->size++; 
 }
 
 void enlarge(HashMap * map) {
@@ -87,9 +83,19 @@ void eraseMap(HashMap * map,  char * key) {
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
-
-
-    return NULL;
+  long codigo = hash(key, map->capacity);
+  while(1)
+    {
+      if(map->buckets[codigo]==NULL)
+      {
+        break;
+      }
+      if(map->buckets[codigo] != NULL)
+      {
+        return map->buckets[codigo];
+      }
+    }
+  return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
