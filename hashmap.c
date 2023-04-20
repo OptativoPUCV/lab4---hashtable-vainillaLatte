@@ -82,7 +82,7 @@ void eraseMap(HashMap * map,  char * key) {
 
 }
 
-air * searchMap(HashMap * map, char * key) {
+Pair * searchMap(HashMap * map, char * key) {
     long codigo = hash(key, map->capacity);
     int i = 0;
     while (i < map->capacity) {

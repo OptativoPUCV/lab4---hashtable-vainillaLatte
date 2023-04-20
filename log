@@ -674,3 +674,9 @@ test.c:262:18: error: initialization of ‘Pair *’ from incompatible pointer t
 cc1: all warnings being treated as errors
 Compilation failed
 e85d7e6
+Thu 20 Apr 2023 01:25:18 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|3
+total_score: 40/70
+fdceadd
