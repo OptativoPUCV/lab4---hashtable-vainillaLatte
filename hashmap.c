@@ -92,8 +92,9 @@ Pair * searchMap(HashMap * map,  char * key) {
       }
       if(map->buckets[codigo] != NULL)
       {
-        return map->buckets[codigo];
         map->current = codigo; 
+        return map->buckets[codigo];
+        
       }
     }
   return NULL;
