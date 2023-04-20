@@ -697,3 +697,13 @@ hashmap.c:81:5: error: ‘dato’ undeclared (first use in this function)
 hashmap.c:81:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 6874c88
+Thu 20 Apr 2023 01:28:43 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:84:17: error: array subscript is not an integer
+   84 |     map->buckets[dato]->key=NULL;
+      |                 ^
+Compilation failed
+f6ffbdb

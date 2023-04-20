@@ -78,7 +78,7 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-    dato=searchMap(map,key);
+    Pair *dato=searchMap(map,key);
   if(dato!=NULL)
   {
     map->buckets[dato]->key=NULL;
