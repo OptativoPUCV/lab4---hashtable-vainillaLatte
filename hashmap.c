@@ -93,6 +93,7 @@ Pair * searchMap(HashMap * map,  char * key) {
       if(map->buckets[codigo] != NULL)
       {
         return map->buckets[codigo];
+        map->current++;
       }
     }
   return NULL;
