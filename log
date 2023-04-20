@@ -718,3 +718,14 @@ hashmap.c:84:17: error: assignment to ‘long int’ from ‘void *’ makes int
 cc1: all warnings being treated as errors
 Compilation failed
 311b916
+Thu 20 Apr 2023 01:29:36 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:84:5: error: statement with no effect [-Werror=unused-value]
+   84 |     !map->current;
+      |     ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+68269b8
