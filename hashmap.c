@@ -89,14 +89,14 @@ Pair * searchMap(HashMap * map, char * key) {
         if (map->buckets[codigo] == NULL) {
             break;
         }
-        if (map->buckets[codigo]->key != NULL && strcmp(map->buckets[codigo]->key, key) == 0) {
+        if (is_equal(map->buckets[codigo]->key, key)) {
             map->current = codigo;
             return map->buckets[codigo];
-        }
-        codigo = (codigo + 1) % map->capacity; // avanzar al siguiente índice circularmente
+      }
+        codigo = (codigo + 1) % map->capacity; 
         i++;
     }
-    return NULL; // clave no encontrada
+    return NULL; 
 }
 
 Pair * firstMap(HashMap * map) {
