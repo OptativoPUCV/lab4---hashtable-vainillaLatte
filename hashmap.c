@@ -82,22 +82,22 @@ void eraseMap(HashMap * map,  char * key) {
 
 }
 
-Pair * searchMap(HashMap * map,  char * key) {   
-  long codigo = hash(key, map->capacity);
-  while(1)
-    {
-      if(map->buckets[codigo]==NULL)
-      {
-        break;
-      }
-      if(map->buckets[codigo] != NULL)
-      {
-        map->current = codigo; 
-        return map->buckets[codigo];
-        
-      }
+Pair * searchMap(HashMap * map, char * key) {
+    long codigo = hash(key, map->capacity);
+    while (map->buckets[codigo] != NULL) {
+        if (is_equal(map->buckets[codigo], key)) {
+            map->current = codigo;
+            return map->buckets[codigo];
+        }
+        codigo++;
+        if (codigo == map->capacity) {
+            codigo = 0;
+        }
+        if (codigo == map->current) {
+            break;
+        }
     }
-  return NULL;
+    return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
