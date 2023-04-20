@@ -729,3 +729,13 @@ hashmap.c:84:5: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 68269b8
+Thu 20 Apr 2023 01:31:43 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:84:17: error: array subscript is not an integer
+   84 |     map->buckets[key]=NULL;
+      |                 ^
+Compilation failed
+ee63ce2

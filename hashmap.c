@@ -81,7 +81,7 @@ void eraseMap(HashMap * map,  char * key) {
     Pair *dato=searchMap(map,key);
   if(dato!=NULL)
   {
-    !map->current;
+    map->buckets[key]=NULL;
   }
 
 }
