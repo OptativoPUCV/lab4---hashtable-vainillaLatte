@@ -646,3 +646,31 @@ Thu 20 Apr 2023 01:22:54 AM UTC:
  tests:  5|4
 total_score: 30/70
 2c59895
+Thu 20 Apr 2023 01:25:09 AM UTC: 
+ hashmap.c | 21 ++++++++++-----------
+ 1 file changed, 10 insertions(+), 11 deletions(-)
+In file included from test.c:4:
+hashmap.c:85:1: error: unknown type name ‘air’; did you mean ‘Pair’?
+   85 | air * searchMap(HashMap * map, char * key) {
+      | ^~~
+      | Pair
+hashmap.c:85:7: error: conflicting types for ‘searchMap’
+   85 | air * searchMap(HashMap * map, char * key) {
+      |       ^~~~~~~~~
+In file included from hashmap.c:6,
+                 from test.c:4:
+hashmap.h:26:8: note: previous declaration of ‘searchMap’ was here
+   26 | Pair * searchMap(HashMap * table, char * key);
+      |        ^~~~~~~~~
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:94:32: error: returning ‘Pair *’ from a function with incompatible return type ‘int *’ [-Werror=incompatible-pointer-types]
+   94 |             return map->buckets[codigo];
+      |                    ~~~~~~~~~~~~^~~~~~~~
+test.c: In function ‘search_test2’:
+test.c:262:18: error: initialization of ‘Pair *’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+  262 |     Pair* ret =  searchMap(map, "key");
+      |                  ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e85d7e6
